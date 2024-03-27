@@ -51,6 +51,7 @@ const FormValidation = () => {
       setConfirmPasswordColor("red");
     }
 
+    alert(username, email)
 
   }
 
@@ -100,12 +101,12 @@ const FormValidation = () => {
           Submit
         </button>
       </form>
-      <div className="form-information">
+      {/* <div className="form-information">
         <div className="text-dark">
           <h1>Your User Name{username}</h1>
           <h4>Your Email{email}</h4>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
