@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1b1b1b;
+}
+
+.text-white {
+  color: aliceblue;
+}
+
+.text-dark{
+  color: #037680;
+}
+
+.calculatorBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20rem 0;
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.calculator span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  background: #292929;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.calculator span:active {
+  background: rgb(255, 163, 26);
+  color: #fff;
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 120px;
+  background: rgb(255, 163, 26);
+  /* color: #fff; */
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+}
+
+.calculator span.equal {
+  background: rgb(255, 163, 26);
+  /* background: #03b1ff; */
+}
+
+.testimonials {
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f0fdfe;
+}
+
+.testimonials-quote {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.testimonials-author {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonials-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials-nav button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #82e5ee;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.testimonials-nav button:hover {
+  background-color: #037680;
+}
+
+.testimonials-nav button:active {
+  transform: scale(0.95);
+}
+
+/* -------------------------  */
+.AccordionBox {
+  background: rgb(36, 36, 36);
+  color: #fff;
+  font-family: sans-serif;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20rem 0;
+}
+
+.AccordionBoxContainer{
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.accordion-card {
+  margin: 20px;
+  padding: 20px;
+  background: rgb(73, 73, 73);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+p.card-info {
+  width: 30rem;
+  padding: 20px 0;
+  line-height: 1.3;
+}
+
+/* -----------------------------------------  */
+.formValidation-box{
+  /* height: 100vh; */
+  background-image: linear-gradient(to right, #fff7c8 0%, #fa709a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rem 0;
+}
+
+.formValidation-card{
+  background: #f3fffe;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50rem;
+  height: 30rem;
+  box-shadow: 0.5px 0.5px 1px 1px rgb(255, 255, 223);
+}
+.formValidation-card-image{
+  background: url("https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px 10px;
+  margin: 5px;
+  width: 20rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.error {
+  font-family: sans-serif;
+  color: red;
+}
+
+.submit-btn {
+  width: 80%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  background: rgb(255, 90, 123);
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
